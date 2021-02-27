@@ -5,4 +5,12 @@
 //  Created by Garri on 27.02.2021.
 //
 
-import Foundation
+class DataManager {
+    static let shared = DataManager()
+    
+    let preset = ["slideLeft","slideRight","flash","wobble","swing"]
+    
+    let curve = ["easeIn","easeOut","easeInOut","linear","spring"]
+    
+    private init() {}
+}

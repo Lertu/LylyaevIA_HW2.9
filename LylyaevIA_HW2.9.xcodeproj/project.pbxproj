@@ -50,8 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				0747239625EA39C6008DDD33 /* LylyaevIA_HW2.9 */,
-				074723BC25EA8897008DDD33 /* Model */,
-				074723BB25EA884D008DDD33 /* Supporting_Files */,
 				0747239525EA39C6008DDD33 /* Products */,
 				674C7D09998455978F0D965F /* Pods */,
 				B3B11DC7303AECF8FF711DC2 /* Frameworks */,
@@ -69,11 +67,13 @@
 		0747239625EA39C6008DDD33 /* LylyaevIA_HW2.9 */ = {
 			isa = PBXGroup;
 			children = (
+				074723BC25EA8897008DDD33 /* Model */,
 				074723B825EA8821008DDD33 /* DataManager.swift */,
 				0747239B25EA39C6008DDD33 /* ViewController.swift */,
 				0747239D25EA39C6008DDD33 /* Main.storyboard */,
 				074723A025EA39CA008DDD33 /* Assets.xcassets */,
 				074723A225EA39CB008DDD33 /* LaunchScreen.storyboard */,
+				074723BB25EA884D008DDD33 /* Supporting_Files */,
 			);
 			path = LylyaevIA_HW2.9;
 			sourceTree = "<group>";
@@ -81,9 +81,9 @@
 		074723BB25EA884D008DDD33 /* Supporting_Files */ = {
 			isa = PBXGroup;
 			children = (
+				074723A525EA39CB008DDD33 /* Info.plist */,
 				0747239725EA39C6008DDD33 /* AppDelegate.swift */,
 				0747239925EA39C6008DDD33 /* SceneDelegate.swift */,
-				074723A525EA39CB008DDD33 /* Info.plist */,
 			);
 			path = Supporting_Files;
 			sourceTree = "<group>";
