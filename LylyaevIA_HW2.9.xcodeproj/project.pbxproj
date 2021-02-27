@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		0747239F25EA39C6008DDD33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0747239D25EA39C6008DDD33 /* Main.storyboard */; };
 		074723A125EA39CA008DDD33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074723A025EA39CA008DDD33 /* Assets.xcassets */; };
 		074723A425EA39CB008DDD33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074723A225EA39CB008DDD33 /* LaunchScreen.storyboard */; };
+		074723B625EA880E008DDD33 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074723B525EA880E008DDD33 /* Animation.swift */; };
+		074723B925EA8821008DDD33 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074723B825EA8821008DDD33 /* DataManager.swift */; };
+		8A4FDB4399FF4AA08F6DDC8A /* Pods_LylyaevIA_HW2_9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B234DD4ADCDC05668288BB49 /* Pods_LylyaevIA_HW2_9.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		074723A025EA39CA008DDD33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		074723A325EA39CB008DDD33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		074723A525EA39CB008DDD33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074723B525EA880E008DDD33 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		074723B825EA8821008DDD33 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		4F8A8C47E2744788116A864E /* Pods-LylyaevIA_HW2.9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LylyaevIA_HW2.9.debug.xcconfig"; path = "Target Support Files/Pods-LylyaevIA_HW2.9/Pods-LylyaevIA_HW2.9.debug.xcconfig"; sourceTree = "<group>"; };
+		B234DD4ADCDC05668288BB49 /* Pods_LylyaevIA_HW2_9.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LylyaevIA_HW2_9.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4FB64FC3B4366F56F016EF /* Pods-LylyaevIA_HW2.9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LylyaevIA_HW2.9.release.xcconfig"; path = "Target Support Files/Pods-LylyaevIA_HW2.9/Pods-LylyaevIA_HW2.9.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4FDB4399FF4AA08F6DDC8A /* Pods_LylyaevIA_HW2_9.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +50,11 @@
 			isa = PBXGroup;
 			children = (
 				0747239625EA39C6008DDD33 /* LylyaevIA_HW2.9 */,
+				074723BC25EA8897008DDD33 /* Model */,
+				074723BB25EA884D008DDD33 /* Supporting_Files */,
 				0747239525EA39C6008DDD33 /* Products */,
+				674C7D09998455978F0D965F /* Pods */,
+				B3B11DC7303AECF8FF711DC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +69,48 @@
 		0747239625EA39C6008DDD33 /* LylyaevIA_HW2.9 */ = {
 			isa = PBXGroup;
 			children = (
-				0747239725EA39C6008DDD33 /* AppDelegate.swift */,
-				0747239925EA39C6008DDD33 /* SceneDelegate.swift */,
+				074723B825EA8821008DDD33 /* DataManager.swift */,
 				0747239B25EA39C6008DDD33 /* ViewController.swift */,
 				0747239D25EA39C6008DDD33 /* Main.storyboard */,
 				074723A025EA39CA008DDD33 /* Assets.xcassets */,
 				074723A225EA39CB008DDD33 /* LaunchScreen.storyboard */,
-				074723A525EA39CB008DDD33 /* Info.plist */,
 			);
 			path = LylyaevIA_HW2.9;
+			sourceTree = "<group>";
+		};
+		074723BB25EA884D008DDD33 /* Supporting_Files */ = {
+			isa = PBXGroup;
+			children = (
+				0747239725EA39C6008DDD33 /* AppDelegate.swift */,
+				0747239925EA39C6008DDD33 /* SceneDelegate.swift */,
+				074723A525EA39CB008DDD33 /* Info.plist */,
+			);
+			path = Supporting_Files;
+			sourceTree = "<group>";
+		};
+		074723BC25EA8897008DDD33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				074723B525EA880E008DDD33 /* Animation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		674C7D09998455978F0D965F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F8A8C47E2744788116A864E /* Pods-LylyaevIA_HW2.9.debug.xcconfig */,
+				FA4FB64FC3B4366F56F016EF /* Pods-LylyaevIA_HW2.9.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B3B11DC7303AECF8FF711DC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B234DD4ADCDC05668288BB49 /* Pods_LylyaevIA_HW2_9.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 074723A825EA39CB008DDD33 /* Build configuration list for PBXNativeTarget "LylyaevIA_HW2.9" */;
 			buildPhases = (
+				3BADE59852F8BFE4E4CC3AAB /* [CP] Check Pods Manifest.lock */,
 				0747239025EA39C6008DDD33 /* Sources */,
 				0747239125EA39C6008DDD33 /* Frameworks */,
 				0747239225EA39C6008DDD33 /* Resources */,
+				B11CFCC5B5C19932E33E4BC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +180,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BADE59852F8BFE4E4CC3AAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LylyaevIA_HW2.9-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B11CFCC5B5C19932E33E4BC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LylyaevIA_HW2.9/Pods-LylyaevIA_HW2.9-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LylyaevIA_HW2.9/Pods-LylyaevIA_HW2.9-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LylyaevIA_HW2.9/Pods-LylyaevIA_HW2.9-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0747239025EA39C6008DDD33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0747239C25EA39C6008DDD33 /* ViewController.swift in Sources */,
+				074723B925EA8821008DDD33 /* DataManager.swift in Sources */,
 				0747239825EA39C6008DDD33 /* AppDelegate.swift in Sources */,
+				074723B625EA880E008DDD33 /* Animation.swift in Sources */,
 				0747239A25EA39C6008DDD33 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,12 +375,13 @@
 		};
 		074723A925EA39CB008DDD33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F8A8C47E2744788116A864E /* Pods-LylyaevIA_HW2.9.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TWS3Y7LAZ2;
-				INFOPLIST_FILE = LylyaevIA_HW2.9/Info.plist;
+				INFOPLIST_FILE = LylyaevIA_HW2.9/Supporting_Files/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +395,13 @@
 		};
 		074723AA25EA39CB008DDD33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA4FB64FC3B4366F56F016EF /* Pods-LylyaevIA_HW2.9.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TWS3Y7LAZ2;
-				INFOPLIST_FILE = LylyaevIA_HW2.9/Info.plist;
+				INFOPLIST_FILE = LylyaevIA_HW2.9/Supporting_Files/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
